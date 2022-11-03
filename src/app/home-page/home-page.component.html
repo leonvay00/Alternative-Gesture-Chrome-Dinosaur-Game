@@ -1,0 +1,31 @@
+<app-nav-bar></app-nav-bar>
+<div class="game">
+  <div id="jumper" #jumper name="jumper"></div>
+  <div id="fireball" #fireball name="fireball"></div>
+  <div id="obstacle" #obstacle name="obstacle"></div>
+</div>
+
+<h1>How to Play:</h1>
+<h4>Welcome to simple alternative gestured version of the Google Chrome Dinosaur game!</h4>
+<h4>This game plays similar to the original game created by Google but the main difference</h4>
+<h4>is that the game is played with hand gestures using your webcam.</h4>
+<h4>Before you may begin using the alternative gestures, please press the 'start' button.</h4>
+<h4>Here are the controls:</h4>
+<ul>
+  <li>Start Game - Hand Pointing</li>
+  <li>Quit/Stop Game - Two Open Hands</li>
+  <li>Jumping - Closed Hand</li>
+  <li>Fireball - Two Hands Pointing</li>
+</ul>
+<h1>Navigation</h1>
+<h4>You may also use hand gestures to navigate the website as well!</h4>
+<h4>Here are the controls for doing so:</h4>
+<ul>
+  <li>Navigate to About Page - Two Closed Hands</li>
+</ul>
+
+<app-handtracker (onPrediction)="prediction($event)"></app-handtracker>
+
+<div id="gestureText" [innerHTML]="gesture"></div>
+
+

@@ -1,0 +1,17 @@
+<app-nav-bar></app-nav-bar>
+<h1>About the creators</h1>
+<h4>This alternative version of the Google Chrome Dinosaur game was created by UCI Student</h4>
+<h4>Leon Vay for the Fall 2021 Informatics 133 Class.</h4>
+<h4>Leon is a 4th year at UCI pursuing the Informatic Major.</h4>
+<h1>About the Game</h1>
+<h4>The game was created using Angular with the combination of the Tensorflow</h4>
+<h4>handtracker Javascript File. The original game by Google was a very simple</h4>
+<h4>design and the creators of this web app decided to follow in its footsteps</h4>
+<h4>and keep the design simple as well.</h4>
+<h1>Going back to the game</h1>
+<h4>To go back to the game, hit the start button at the bottom then make this gesture</h4>
+<ul>
+    <li>Navigate to Game - One Open Hand One Closed Hand</li>
+  </ul>
+<app-handtracker (onPrediction)="prediction($event)"></app-handtracker>
+<div id="gestureText"[innerHTML]="gesture"></div>

@@ -1,0 +1,125 @@
+/* The foundation of our game was achieved with the help of this youtube video: https://www.youtube.com/watch?v=i7nIutSLvdU */
+/* The code was adapted to fit Angular and our needs */
+/* Any other feature that is was not in the orignal game or seen in the video is soley our own code and ideas */
+
+.game {
+    width: 700px;
+    height: 300px;
+    border: 1px solid black;
+    margin: auto;
+    text-align: center;
+}
+
+#jumper {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+
+    position: relative;
+    /* This is what dictates the postion of the dinosaur. The lower the pixels, the higher he jumps */
+    top: 250px; 
+    right: -20px
+}
+
+#obstacle {
+    width: 20px;
+    height: 40px;
+    position: relative;
+    /* When making the fireball disapper, we need to set top px to 210px */
+    top: 210px;
+    left: 680px;
+
+    background-color: green;
+
+}
+
+#fireball {
+    width: 10px;
+    height: 10px;
+    position: relative;
+    top: 220px;
+    right: -60px;
+    display: none;
+
+    background-color: orange;
+
+}
+
+.start {
+    animation: blocker 2.5s infinite linear;
+}
+
+.jump {
+    animation: jump 0.3s linear;
+}
+
+.shoot {
+    animation: shoot 1.6s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 250px;
+    }
+
+    30% {
+        top: 230px;
+    }
+
+    50% {
+        top: 150px;
+    }
+
+    80% {
+        top: 230px;
+    }
+
+    100% {
+        top: 250px;
+    }
+}
+
+@keyframes blocker {
+    0% {
+        left: 700px;
+    }
+
+    100% {
+        left: -20px;
+    }
+}
+
+@keyframes shoot {
+    0% {
+        left: 50px;
+    }
+
+    100% {
+        left: 710px;
+    }
+}
+
+h1 {
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+ul {
+    text-align: center;
+    list-style-type: none;
+}
+
+li {
+    font-size: large;
+}
+
+app-handtracker {
+    text-align: center;
+}
+
+#gestureText {
+    text-align: center;
+}

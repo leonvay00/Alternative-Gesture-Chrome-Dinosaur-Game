@@ -1,0 +1,24 @@
+app-handtracker {
+    text-align: center;
+}
+
+#gestureText {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+ul {
+    text-align: center;
+    list-style-type: none;
+}
+
+li {
+    font-size: large;
+}
