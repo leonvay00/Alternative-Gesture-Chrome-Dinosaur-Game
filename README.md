@@ -3,6 +3,7 @@
   
 
 
+![Alternative Gesture Chrome Dinosaur Game](https://user-images.githubusercontent.com/79191646/200977868-51320a61-bb26-47e4-8323-bbedd9daeb5f.jpg)
 
   
 
